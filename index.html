@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포폴반응형으로 수정중...</title>
+    <title>포폴반응형으로 수정중</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"></head>
 <body>
@@ -29,7 +29,7 @@
                 <div class="logo">
                     <a href="index.html"></a>
                 </div>
-                <nav>
+                <nav id="main-nav">
                     <ul>
                         <li rel="about"><a href="">about</a></li>
                         <li rel="skills"><a href="">skills</a></li>
@@ -50,7 +50,7 @@
         </article>
 
 
-        <section id="skew_cont"><!---700px 벽글씨--->
+        <article id="skew_cont"><!---700px 벽글씨--->
             <div class="skew1">
                 <h2>안녕하세요</h2>
                 <h2>정설화의</h2>
@@ -68,42 +68,32 @@
                 <span></span>
                 <span></span>
             </div>
-        </section>
+        </article>
 
 
    
-        <section id="cover">
-            <section id="about">
+        <article id="cover">
+            <section class="page" id="about">
                 <article id="about_title">
                     <h1>"</h1><div></div><h1>About Me</h1>
                 </article>
                 <div class="cover_txt">
-                    <h1>열심히 달려나가는 <br>
+                    <h1>열심히 달려나아가는 <br>
                     의지의 신입 웹퍼블리셔<br>
                     정설화 입니다.</h1>
                 </div>
 
-                <section id="photo_box">
+                <article id="photo_box">
                     <article class="photo"><img src="./img/me1.png" alt=""></article>
-                    <article class="int_box">
-                        <ul>
-                            <li>생년월일</li>
-                            <li><button>1992.12.28</button></li>
-                            <li>사는 곳</li>
-                            <li><button>서울시 송파구</button></li>
-                        </ul>
-                        <ul>
-                            <li>가족 구성</li>
-                            <li><button>아빠 엄마 남동생</button></li>
-                            <li>좌우명</li>
-                            <li><button>열심히 살자</button></li>
-                        </ul>
-                    </article>
-                </section>
+                  
+                </article>
 
                 <article id="tabs">
                     <div class="tab_header">
                         <div class="active">
+                            <i class="bi bi-person-lines-fill"></i>introduce
+                        </div>
+                        <div class="edu">
                             <i class="bi bi-book"></i>education
                         </div>
                         <div class="work">
@@ -119,6 +109,12 @@
                     <div class="tab_indicator"></div>
                     <div class="tab_body">
                         <div class="active">
+                           <h3>생년월일:1992.12.28</h3>
+                           <h3>사는곳:서울시 송파구</h3>
+                           <h3>가족구성:아빠,엄마,남동생</h3>
+                           <h3>좌우명:좋았다면 추억이고 나빴다면 경험이다.</h3>
+                        </div>
+                        <div>
                             <h3>문정 고등학교 - 졸업</h3>
                             <h3>백석예술대학교(일본어전공) - 졸업</h3>
                             <h3>(일본)휴먼아카데미 일본어 - 수료</h3>
@@ -150,27 +146,27 @@
                 </article>
             </section>
 
-            <section id="skills">
-                <p class="big_skill">skills</p>
+            <section class="page" id="skills">
+                <article class="big_skill">
+                    <h1>skills</h1><div></div><h1>"</h1></article>
                 <div id="skills_bigbox">
                     
                     <div class="skills_txt">
-                        <p>ds챕터 내용을 간단하게 요약해주는
-                            글귀를 넣으면 좋습니다.
-                            어떤 주제인지, 혹은 어떤 사람인지
-                            소개시키는 페이지입니다. </p>
-                        <p>ds챕터 내용을 간단하게 요약해주는
-                            글귀를 넣으면 좋습니다.
-                            어떤 주제인지, 혹은 어떤 사람인지
-                            소개시키는 페이지입니다. </p>
-                        <p>ds챕터 내용을 간단하게 요약해주는
-                            글귀를 넣으면 좋습니다.
-                            어떤 주제인지, 혹은 어떤 사람인지
-                            소개시키는 페이지입니다. </p>
-                        <p>ds챕터 내용을 간단하게 요약해주는
-                            글귀를 넣으면 좋습니다.
-                            어떤 주제인지, 혹은 어떤 사람인지
-                            소개시키는 페이지입니다. </p>
+                        <p>HTML 시멘틱 마크업 및 웹 접근성 마크업 규칙에 대해서 잘 이해하고 있습니다. 
+                        css로 좀 더 화려한 웹사이트를 만들기 위해 노력하고 있으며 특히 amimation의 동적이며
+                        재미있는 트릭을 넣는 것에 흥미가 있습니다.
+                        </p>
+                        <p>미디어 쿼리로 반응형 웹사이트를 구축할 수 있습니다.
+                            어떠한 디바이스라도 환경에 맞게 구현할 수 있는 웹퍼블리셔가 되는 것이 저의 목표중 하나입니다.
+                        </p>
+                        <p>Javascript, jquery의 기본 문법을 이해하고 있으며  동적 코드 작성,
+                            오픈소스 활용 및 수정이 가능합니다. Javascript를 좀더 자유롭게 구사하기 위해
+                            하루에 1회 이상 예습 복습을 하고 있습니다.</p>
+                        <p>vue의 기본문법을 이해하고 있으며 간편한 프레임워크에 매력을 느껴 인터넷 강의로 학습중입니다.
+                        </p>
+                        <p>포토샵,일러스트는 기본툴을 이해 하고 있으며 보정작업, 배너작업, 기본 캐릭터 작업등이 가능합니다.
+                            XD로 사이트 시안작업이 가능합니다.
+                        </p>
                     </div>          
                     <div id="barbox_contain">
                         <div id="skills_box">
@@ -189,17 +185,17 @@
                                 </div>
                                 <div class="bar">
                                     <div class="info">
-                                        <span>Javascript</span>
+                                        <span>Javascript/jquery</span>
                                     </div>
                                     <div class="progress-line js"><span></span></div>
                                 </div>
                                 <div class="bar">
-                                    <div class="bar">
+                                    <!-- <div class="bar">
                                         <div class="info">
                                             <span>jquery</span>
                                         </div>
-                                        <div class="progress-line ps_ai"><span></span></div>
-                                    </div>
+                                        <div class="progress-line ps_jq"><span></span></div>
+                                    </div> -->
                                     <div class="info">
                                         <span>VUE</span>
                                     </div>
@@ -215,7 +211,7 @@
                                     <div class="info">
                                         <span>XD</span>
                                     </div>
-                                    <div class="progress-line ps_ai"><span></span></div>
+                                    <div class="progress-line xd"><span></span></div>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +225,7 @@
                 </ul>
               
             </section>
-            <section id="pofol">
+            <section class="page" id="pofol">
                 <p class="pofol_title">portfolio</p>
                 <div id="pofolbox_cont1">
                     <div id="pofolbox_cont2">
@@ -263,7 +259,7 @@
                                     <p class="more"><a href="">보러가기><i class="icon-double-angle-right"></i></a></p>
                             </div>
                         </div>
-                        <div class="pofol_box">
+                        <div  class="pofol_box">
                             <div class="mac_photo">
 
                             </div>
@@ -287,9 +283,9 @@
                 </div>
             </section>
 
-            <section id="contactbox">
+            <section class="page" id="contactbox">
                 <div class="contact">
-                    <h2>Contact Me</h2>
+                    <h2>"Contact Me"</h2>
                     <form class="gform form-elements" name="contactUs" methods="post" action="https://script.google.com/macros/s/AKfycbx6r4tsHDdU39Yde_qFXSAL8ZYc4sCIcGiy9uJb/exec">
             
                         <fieldset>
@@ -342,7 +338,7 @@
             <section class="sns_box">
                 <ul>
                     <li><a href=""><i class="bi bi-twitter"></i></i> </a></li>
-                    <li><a href=""><i class="bi bi-envelope"></i></i> </a></li>
+                    <li onclick="copy()"><a href="" onclick="return false;"><i class="bi bi-envelope"></i></i> </a></li>
                     <li><a href=""><i class="bi bi-instagram"></i></i></a></li>
                 </ul>
             </section>
@@ -354,8 +350,30 @@
             <div id="up"><i class="bi bi-chevron-double-up"></i>
             </div>
         
+
+            <nav class="sidebar-navigation">
+                <ul>
+                <li rel="about" class="active">
+                    <a href="#about"><i class="bi bi-person-circle"></i></a>
+                    <span class="tooltip">About</span>
+                </li>
+                <li rel="skills" >
+                    <a href="#skills"><i class="bi bi-card-checklist"></i></a>
+                    <span class="tooltip">Skills</span>
+                </li>
+                <li rel="pofol">
+                    <a href="#pofol"><i class="bi bi-clipboard2-heart"></i></a>
+                    <span class="tooltip">Portfolio</span>
+                </li>
+                <li  rel="contactbox">
+                    <a href="#contactbox"><i class="bi bi-envelope-paper"></i></a>
+                    <span class="tooltip">Contact</span>
+                </li>
+               
+                </ul>
+                </nav>
         
-        </section>
+        </article>
         
         
     </section>
