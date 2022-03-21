@@ -69,7 +69,6 @@ for (let i = 0; i < tabsPane.length; i++) {
 }
 
 ///포폴 수동슬라이드
-
 document
     .querySelector('#number1')
     .addEventListener('click', function () {
@@ -103,14 +102,31 @@ document
             .transform = 'translateX(-300vw)';
     });
 
-// 클릭하면 클래스 추가한다. 만약 클릭으로 켜져 있으면 다른건 없어진다. /땡큐메세지닫기
-const $tm = document.querySelector(".thankyou_message ");
-const $close = document.querySelector(".thankyou_message .close");
+/////다음버튼 클릭
+var NowPo = 1;
+var slideLength = document.getElementsByClassName('pofol_box').length;//총 포폴갯수
+console.log(slideLength);
 
-$close.addEventListener("click", function (a) {
-    a.preventDefault();
-    $tm.style.display = "none";
+document.querySelector('#next').addEventListener('click', function () {
+    if(NowPo < slideLength){
+    document.querySelector('#pofolbox_cont2').style.transform = 'translateX(-'+NowPo+'00vw)';
+    NowPo += 1;
+    }else if (NowPo == slideLength ){
+        document.querySelector('#next').style.opacity = '0';
+    }
 });
+
+
+/////이전버튼 클릭
+document.querySelector('#prev').addEventListener('click', function () {   
+    if((NowPo - 1) > -1){
+    document.querySelector('#pofolbox_cont2').style.transform = 'translateX(-'+(NowPo - 1)+'00vw)';
+    NowPo -= 1;
+    document.querySelector('#next').style.opacity = '1';
+    }
+    console.log(NowPo);
+});
+
 
 ///스크롤시 위,네비바 나타남
 let userHasScrolled = false;
@@ -144,6 +160,8 @@ function copy() {
     copyToClipboard('dhqkfskrwl@naver.com');
     alert('이메일이 복사되었습니다.');
 }
+
+
 
 // 로딩화면 페이드아웃
 $(window).on('load', function () {

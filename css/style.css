@@ -122,7 +122,7 @@ header{
       transform:scale(1);
     }
     50%{
-      transform: scale(1.3);
+      transform: scale(1.2);
     }
 
     100%{
@@ -191,6 +191,10 @@ header{
   }
 
 @media screen and (max-width:700px){
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
   header{
     height: 60px;
     position: fixed;
@@ -638,7 +642,7 @@ header{
 @media screen and (max-width:700px){
     #tabs{
       width: 80vw;
-      height: 27vh;
+      height: 30vh;
       margin-top: 100px;
     }
     .cover_txt{
@@ -1253,6 +1257,32 @@ width: 75%;
   font-size: 14px;
 }
 
+
+#arrow_box{
+  width: 95%;
+  position: absolute;
+  top: 60%;
+  left:60px;
+  text-align: center;
+}
+.arrow_box2{
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow_box2 i{
+  color:var(--text-color);
+  font-size: 30px;
+ cursor: pointer;
+}
+
+
+
+
+
+
 #button_box{
     width: 100%;
     height: 30px;
@@ -1345,8 +1375,8 @@ width: 75%;
     height: 300px;
     width: 90vw;
     margin: 20px 0px;
-    padding:10px 10px;
-    text-align: left;
+    padding:10px 0px;
+    text-align: center;
     border:none;
     background: none;
     color:var(--text-color)
@@ -1359,9 +1389,9 @@ width: 75%;
     margin: 8px 0 5px;
     text-align: left;
     font-size: 45px;
-    border-bottom: 1px solid var(--text-color);
     display: inline-block;
-    border-bottom: 1px solid var(--text-color);
+    color:#00acee;
+
   }
   
   .mac_txt .long_txt {
@@ -1381,20 +1411,21 @@ width: 75%;
   .mac_txt .look a::after{
     background-color: var(--background-color);
   }
+
+  #arrow_box{
+    width: 0;
+    top: 55%;
+    left:0;
+  }
+  .arrow_box2{
+    width: 90vw;
+  }
+  .arrow_box2 i{
+    color:#00acee
+  }
+
   #button_box {
-    margin: 10px 0;
-  }
-  #s1,#number1{
-    left: 41%;
-  }
-  #s2,#number2{
-    left:47%;
-  }
-  #s3,#number3{
-    left:53%;
-  }
-  #s4,#number4{
-    left:59%;
+    display: none;
   }
 }
 
@@ -1806,7 +1837,7 @@ footer{
 @media(max-width:700px){
   #up{
     width: 28px;height: 28px;
-    left:88%;
+    left:85%;
   }
   #up i{
     top: 3px;
