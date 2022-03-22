@@ -162,6 +162,29 @@ function copy() {
 }
 
 
+function isElementUnderBottom(elem, triggerDiff) {
+    const { top } = elem.getBoundingClientRect();
+    const { innerHeight } = window;
+    return top > innerHeight + (triggerDiff || 0);
+  }
+  
+  function handleScroll() {
+    const elems = document.querySelectorAll(' #about_title ,.big_skill,.skills_txt,.pofol_title,.contact fieldset');
+    elems.forEach(elem => {
+      if (isElementUnderBottom(elem, -20)) {
+        elem.style.opacity = "0";
+        elem.style.transform = 'translateY(70px)';
+      } else {
+        elem.style.opacity = "1";
+        elem.style.transform = 'translateY(0px)';
+      }
+    })
+  }
+  
+  
+  
+  window.addEventListener('scroll', handleScroll);
+
 
 // 로딩화면 페이드아웃
 $(window).on('load', function () {
