@@ -470,6 +470,17 @@ header{
   100%{top:20%;}
 }
 
+
+@media screen and (max-width:870px){
+  #about::before{
+    width: 200px;height: 200px;
+    left: 5%;
+  }
+  #about::after{
+    width: 250px;height: 250px;
+  }
+
+}
 #cover #about_title {
     width: 80vw;
     display: flex;
@@ -1028,7 +1039,7 @@ width: 75%;
   100%{opacity: 1;}
 }
 
-@media(max-width:700px){
+@media(max-width:991px){
   .bar .progress-line span{
     animation-play-state: running;
   }
@@ -1433,7 +1444,33 @@ width: 75%;
 }
 
 
+@media(max-width:870px){
+  .pofol_title {
+  margin: 100px 0 50px 20px;
+  }
+  .pofol_box {
+    padding: 0;
+  }
 
+  #arrow_box {
+    width:100vw;
+    left: 0;
+}
+.pofol_subbox {
+  flex-direction: column;
+}
+.mac_photo {
+  margin: 0 auto;
+  width: 90%;
+  height: 444px;
+    background: url(../img/1_imac.png) no-repeat 50%;
+    background-size: 100%;
+}
+
+.mac_txt {
+  width: auto;
+  margin: 50px 20px;
+}
 
 /******************컨택트*********************/
 
