@@ -83,7 +83,7 @@ document
         document
             .querySelector('#pofolbox_cont2')
             .style
-            .transform = 'translateX(-100%)';
+            .transform = 'translateX(-25%)';
     });
 document
     .querySelector('#number3')
@@ -91,7 +91,7 @@ document
         document
             .querySelector('#pofolbox_cont2')
             .style
-            .transform = 'translateX(-200%)';
+            .transform = 'translateX(-50%)';
     });
 document
     .querySelector('#number4')
@@ -99,7 +99,7 @@ document
         document
             .querySelector('#pofolbox_cont2')
             .style
-            .transform = 'translateX(-300%)';
+            .transform = 'translateX(-75%)';
     });
 
 /////다음버튼 클릭
@@ -109,7 +109,7 @@ console.log(slideLength);
 
 document.querySelector('#next').addEventListener('click', function () {
     if(NowPo < slideLength){
-    document.querySelector('#pofolbox_cont2').style.transform = 'translateX(-'+NowPo+'00vw)';
+    document.querySelector('#pofolbox_cont2').style.transform = 'translateX(-'+(NowPo*25)+'%)';
     NowPo += 1;
     }else if (NowPo == slideLength ){
         document.querySelector('#next').style.opacity = '0';
@@ -120,7 +120,7 @@ document.querySelector('#next').addEventListener('click', function () {
 /////이전버튼 클릭
 document.querySelector('#prev').addEventListener('click', function () {   
     if((NowPo - 1) > -1){
-    document.querySelector('#pofolbox_cont2').style.transform = 'translateX(-'+(NowPo - 1)+'00vw)';
+    document.querySelector('#pofolbox_cont2').style.transform = 'translateX(-'+((NowPo - 1)*25)+'%)';
     NowPo -= 1;
     document.querySelector('#next').style.opacity = '1';
     }

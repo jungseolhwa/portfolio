@@ -1456,6 +1456,7 @@ width: 75%;
   #arrow_box {
     width:100%;
     left: 0;
+    top:55%;
 }
 .pofol_subbox {
   flex-direction: column;
@@ -1463,7 +1464,7 @@ width: 75%;
 .mac_photo {
   margin: 0 auto;
   width: 90%;
-  height: 444px;
+  height: 300px;
     background: url(../img/1_imac.png) no-repeat 50%;
     background-size: 100%;
 }
