@@ -75,7 +75,7 @@ document
         document
             .querySelector('#pofolbox_cont2')
             .style
-            .transform = 'translateX(0vw)';
+            .transform = 'translateX(0%)';
     });
 document
     .querySelector('#number2')
@@ -83,7 +83,7 @@ document
         document
             .querySelector('#pofolbox_cont2')
             .style
-            .transform = 'translateX(-100vw)';
+            .transform = 'translateX(-100%)';
     });
 document
     .querySelector('#number3')
@@ -91,7 +91,7 @@ document
         document
             .querySelector('#pofolbox_cont2')
             .style
-            .transform = 'translateX(-200vw)';
+            .transform = 'translateX(-200%)';
     });
 document
     .querySelector('#number4')
@@ -99,7 +99,7 @@ document
         document
             .querySelector('#pofolbox_cont2')
             .style
-            .transform = 'translateX(-300vw)';
+            .transform = 'translateX(-300%)';
     });
 
 /////다음버튼 클릭
@@ -195,6 +195,12 @@ $(window).on('load', function () {
 });
 //메뉴목록 누르면 그 페이지로 스크롤
 $(document).ready(function () {
+    $("body").niceScroll({
+        cursorcolor:"#fff",
+        cursorwidth:"4px"
+      });
+
+
     $("nav ul li ").click(function (e) {
         e.preventDefault();
         const $rel = $(this).attr("rel");
